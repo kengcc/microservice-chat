@@ -37,7 +37,7 @@ store = PGVector(
 
 ## Design ChatPrompt Template
 prompt = ChatPromptTemplate.from_template("""
-As a FAQ Bot for our restaurant, you have the following information about our restaurant. 
+Your are an assistant our restaurant, you have the following information about our restaurant. 
 Think step by step before providing a detailed answer. 
 <context>
 {context}
