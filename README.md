@@ -35,5 +35,5 @@ The provided `insert_data.py` script can be used to populate the Postgres databa
 It does not working for now as the documentation not updated and seems to be deprecated.  For now, just run /llm-service/app-test.ipynb to populate the database
 
 ## Env Variable
-set your .env OpenAI API Key.
+set your .env with OpenAI API Key and LangChain API Key.
 
