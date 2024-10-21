@@ -90,6 +90,5 @@ retrieval_chain=create_retrieval_chain(retriever,document_chain)
 async def llm_service(conversation_id: str, conversation: Conversation):
     query = conversation.conversation[-1].content
     response=retrieval_chain.invoke({"input": query})
-    print (response['answer'])
 
     return {"id": conversation_id, "reply": response['answer']}
