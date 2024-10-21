@@ -1,0 +1,13 @@
+langchain
+langchain_openai
+langchain_core
+langchain_community
+python-dotenv
+streamlit
+langserve
+uvicorn
+sse_starlette
+ipykernel
+langchain-postgres
+fastapi
+psycopg[binary,pool]
