@@ -1,6 +1,6 @@
 # Restaurant Chatbot Project with Microservices Architecture
 
-This project is a restaurant chatbot that is distributed across several microservices. The chatbot can answer general questions about the restaurant, such as operating hours, menu options, and health protocols.
+This project is a GF BVM real time assistant that is distributed across several microservices. The virtual assistant can answer general questions about the Group Finance, Business Value Management Unit, such as MSAP, costing, princing and reporting.
 
 ## Services
 
@@ -32,7 +32,6 @@ This command starts all services using the `compose.yml` file. It downloads the 
 
 The provided `insert_data.py` script can be used to populate the Postgres database with your data. To do this, run the script once the services are up and running. It will connect to the Postgres service, create the necessary tables, and insert data into them.
 
-It does not working for now as the documentation not updated and seems to be deprecated.  For now, just run /llm-service/app-test.ipynb to populate the database
 
 ## Env Variable
 set your .env with OpenAI API Key and LangChain API Key.
