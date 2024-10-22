@@ -37,7 +37,7 @@ store = PGVector(
 
 ## Design ChatPrompt Template
 prompt = ChatPromptTemplate.from_template("""
-Your are an assistant our restaurant, you have the following information about our restaurant. 
+As a virtual assistant for Business Value Management (BVM), you have the following information related to BVM department. 
 Think step by step before providing a detailed answer. 
 <context>
 {context}
@@ -90,5 +90,6 @@ retrieval_chain=create_retrieval_chain(retriever,document_chain)
 async def llm_service(conversation_id: str, conversation: Conversation):
     query = conversation.conversation[-1].content
     response=retrieval_chain.invoke({"input": query})
+    # print (response['answer'])
 
     return {"id": conversation_id, "reply": response['answer']}

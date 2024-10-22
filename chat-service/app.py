@@ -45,7 +45,7 @@ async def chat_service(conversation_id: str, conversation: Conversation):
     if existing_conversation_json:
         existing_conversation = json.loads(existing_conversation_json)
     else:
-        existing_conversation = {"conversation": [{"role": "system", "content": "You are a helpful assistant."}]}
+        existing_conversation = {"conversation": [{"role": "system", "content": "You are a helpful virtual assistant."}]}
 
     existing_conversation["conversation"].append(conversation.dict()["conversation"][-1])
 
@@ -53,7 +53,7 @@ async def chat_service(conversation_id: str, conversation: Conversation):
     response.raise_for_status()
     assistant_message = response.json()["reply"]
 
-    existing_conversation["conversation"].append({"role": "assistant", "content": assistant_message})
+    existing_conversation["conversation"].append({"role": "Virtual Assistant", "content": assistant_message})
 
     r.set(conversation_id, json.dumps(existing_conversation))
 

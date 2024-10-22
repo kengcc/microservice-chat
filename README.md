@@ -32,6 +32,12 @@ This command starts all services using the `compose.yml` file. It downloads the 
 
 The provided `insert_data.py` script can be used to populate the Postgres database with your data. To do this, run the script once the services are up and running. It will connect to the Postgres service, create the necessary tables, and insert data into them.
 
+Before running `insert_data.py` script, you need to set the virtual enviroment and install the dependencies.
+```
+% python -m venv venv
+% venv/script/active
+% pip install -r requirement.txt
+```
 
 ## Env Variable
 set your .env with OpenAI API Key and LangChain API Key.

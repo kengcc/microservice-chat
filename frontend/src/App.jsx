@@ -45,7 +45,7 @@ const App = () => {
 
     const newConversation = [
       ...conversation.conversation,
-      { role: "user", content: userMessage },
+      { role: "User", content: userMessage },
     ];
 
     const response = await fetch(
@@ -73,7 +73,7 @@ const App = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <h1 className="text-3xl font-bold mb-4 text-white">Restaurant Chatbot</h1>
+      <h1 className="text-3xl font-bold mb-4 text-white">BVM Real-Time Assistant</h1>
       {conversation.conversation.length > 0 && (
         <div className="flex flex-col p-4 bg-white rounded shadow w-full max-w-md space-y-4">
           {conversation.conversation
@@ -82,7 +82,7 @@ const App = () => {
               <div
                 key={index}
                 className={`${
-                  message.role === "user" ? "text-right" : "text-left"
+                  message.role === "User" ? "text-right" : "text-left"
                 }`}
               >
                 <strong className="font-bold text-gray-900">
