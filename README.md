@@ -20,7 +20,7 @@ The project consists of the following services:
 ## Setup Env Variable
 set your .env with OpenAI API Key and LangChain API Key.
 
-## Run Application
+## Run Docker Services
 
 To get the project up and running, make sure Docker is installed on your system.
 
