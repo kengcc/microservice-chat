@@ -16,7 +16,11 @@ The project consists of the following services:
 
 5. **Postgres:** A Postgres server acting as a database for storing vector embeddings.
 
-## Setup
+
+## Setup Env Variable
+set your .env with OpenAI API Key and LangChain API Key.
+
+## Run Application
 
 To get the project up and running, make sure Docker is installed on your system.
 
@@ -39,6 +43,10 @@ Before running `insert_data.py` script, you need to set the virtual enviroment a
 % pip install -r requirement.txt
 ```
 
-## Env Variable
-set your .env with OpenAI API Key and LangChain API Key.
+## Run Vitual Assistant
+
+The virtual Assistant portal is running at
+```
+http://localhost:3000
+```
 
