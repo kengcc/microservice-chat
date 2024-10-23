@@ -1,6 +1,6 @@
 # Restaurant Chatbot Project with Microservices Architecture
 
-This project is a GF BVM real time assistant that is distributed across several microservices. The virtual assistant can answer general questions about the Group Finance, Business Value Management Unit, such as MSAP, costing, princing and reporting.
+This a demo project for a GF BVM real time assistant that is distributed across several microservices. The virtual assistant can answer general questions about the Group Finance, Business Value Management Unit, such as MSAP, costing, princing and reporting.
 
 ## Services
 
@@ -8,7 +8,7 @@ The project consists of the following services:
 
 1. **Frontend:** A React application that provides the user interface for interacting with the chatbot.
 
-2. **chat-service:** A Python (FastAPI)-based backend that coordinates the communication between the frontend and Service3. This service also manages the interaction history between the user and the chatbot.
+2. **chat-service:** A Python (FastAPI)-based backend that coordinates the communication between the frontend and chat-service. This service also manages the interaction history between the user and the chatbot.
 
 3. **llm-service:** Another Python (FastAPI)-based backend hosting the chatbot algorithm. This service communicates with the AI engine (OpenAI GPT-3.5-turbo) to process user queries and generate suitable responses.
 
