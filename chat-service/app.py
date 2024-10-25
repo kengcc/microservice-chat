@@ -49,6 +49,7 @@ class Message(BaseModel):
 class Conversation(BaseModel):
     conversation: List[Message]
 
+# get the previous converstion from REDIS
 @app.get("/chat_service/{conversation_id}")
 async def get_conversation(conversation_id: str):
     logger.info(f"Retrieving initial id {conversation_id}")
@@ -59,6 +60,8 @@ async def get_conversation(conversation_id: str):
     else:
         return {"error": "Conversation not found"}
 
+# Send previous conversation and user query to llm-service
+# return the answers
 @app.post("/chat_service/{conversation_id}")
 async def chat_service(conversation_id: str, conversation: Conversation):
     logger.info(f"Sending Conversation with ID {conversation_id} to OpenAI")
