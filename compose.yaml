@@ -32,6 +32,7 @@ services:
       - .env
     depends_on:
       - postgres
+  
   frontend:
     build: ./frontend
     ports:
