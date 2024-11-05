@@ -32,6 +32,7 @@ docker compose up --build
 
 This command starts all services using the `compose.yml` file. It downloads the necessary Docker images, creates associated containers, and gets them running together.
 
+
 ## Data Population
 
 The provided `insert_data.py` script can be used to populate the Postgres database with your data. To do this, run the script once the services are up and running. It will connect to the Postgres service, create the necessary tables, and insert data into them.
