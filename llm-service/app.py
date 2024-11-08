@@ -23,7 +23,6 @@ from langchain_community.vectorstores import PGVector
 from langchain_community.embeddings.openai import OpenAIEmbeddings
 from langchain_openai import OpenAIEmbeddings
 from langchain_postgres import PGVector
-from langchain_postgres.vectorstores import PGVector
 from langchain_openai import ChatOpenAI
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain_core.prompts import ChatPromptTemplate
@@ -36,7 +35,7 @@ import os
 from dotenv import find_dotenv, load_dotenv
 from fastapi.middleware.cors import CORSMiddleware
 import logging
-
+import six
 
 load_dotenv(find_dotenv())
 ## Langmith tracking

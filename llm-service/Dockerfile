@@ -5,7 +5,7 @@ WORKDIR /app
 COPY . /app
 
 RUN pip install --no-cache-dir fastapi uvicorn redis requests python-dotenv postgres psycopg2-binary pgvector \
-    langchain-postgres psycopg[binary,pool] langchain langchain_openai langchain_core langchain_community
+    langchain-postgres psycopg[binary,pool] langchain langchain_openai langchain_core langchain_community six
 
 # wait for postgresql
 RUN sleep 15
